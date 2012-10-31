@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="demo/025_vector_draw/|demo/640_compartment/|demo/820_mvc/model/|demo/660_figure_hover/|demo/030_connector_direct/|demo/500_arrow_line/|demo/950_snap_to_grid/|demo/980_toggle_button/|demo/600_image_resize/|demo/830_network_editor/src/palette/|shape/uml/|demo/060_connector_router/|demo/035_connector_z/|demo/610_round_corner/|demo/650_owndraw/|shape/|demo/080_connector_via_api1/|demo/840_extjs_integration/adapter/prototype/|demo/820_mvc/|demo/840_extjs_integration/adapter/yui/|demo/400_doubleclick/|demo/100_port_representation/|demo/056_connector_doubleclick/|demo/830_network_editor/src/command/|demo/830_network_editor/src/|demo/070_connector_vector/|demo/830_network_editor/src/property/|demo/970_viewport/|demo/055_connector_contextmenu/|demo/840_extjs_integration/adapter/ext/|demo/800_circuit/|demo/830_network_editor/src/menu/|demo/430_flow_menu/|demo/670_link/|demo/960_scroll_to/|demo/820_mvc/view/|demo/200_context_menu/|demo/110_port_test/|demo/630_timer/|demo/830_network_editor/src/xml/|demo/910_serializer/|demo/050_connector_decorator/|demo/090_connector_via_api2/|demo/830_network_editor/src/toolbar/|demo/625_vector_node/|demo/840_extjs_integration/|demo/830_network_editor/lib/|demo/990_resize/|demo/|demo/620_round_corner2/|demo/680_tooltip/|demo/810_guipainter/|demo/830_network_editor/src/view/|demo/830_network_editor/src/dialog/|demo/840_extjs_integration/adapter/jquery/|demo/900_command_listener/|demo/830_network_editor/src/util/|demo/420_workflow_contextmenu/|demo/820_mvc/command/|demo/940_snap_to_geometry/|demo/040_connector_label/|demo/930_selection_listener2/|demo/830_network_editor/src/model/" kind="src" path="draw2d/compressed"/>
+	<classpathentry excluding="025_vector_draw/|640_compartment/|820_mvc/model/|660_figure_hover/|030_connector_direct/|500_arrow_line/|950_snap_to_grid/|980_toggle_button/|600_image_resize/|830_network_editor/src/palette/|060_connector_router/|035_connector_z/|610_round_corner/|650_owndraw/|080_connector_via_api1/|840_extjs_integration/adapter/prototype/|820_mvc/|840_extjs_integration/adapter/yui/|400_doubleclick/|100_port_representation/|056_connector_doubleclick/|830_network_editor/src/command/|830_network_editor/src/|070_connector_vector/|830_network_editor/src/property/|970_viewport/|055_connector_contextmenu/|840_extjs_integration/adapter/ext/|800_circuit/|830_network_editor/src/menu/|430_flow_menu/|670_link/|960_scroll_to/|820_mvc/view/|200_context_menu/|110_port_test/|630_timer/|830_network_editor/src/xml/|910_serializer/|050_connector_decorator/|090_connector_via_api2/|830_network_editor/src/toolbar/|625_vector_node/|840_extjs_integration/|830_network_editor/lib/|990_resize/|620_round_corner2/|680_tooltip/|810_guipainter/|830_network_editor/src/view/|830_network_editor/src/dialog/|840_extjs_integration/adapter/jquery/|900_command_listener/|830_network_editor/src/util/|420_workflow_contextmenu/|820_mvc/command/|940_snap_to_geometry/|040_connector_label/|930_selection_listener2/|830_network_editor/src/model/" kind="src" path="draw2d/compressed/demo"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/025_vector_draw"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/030_connector_direct"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/035_connector_z"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/040_connector_label"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/050_connector_decorator"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/055_connector_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/056_connector_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/060_connector_router"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/070_connector_vector"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/080_connector_via_api1"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/090_connector_via_api2"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/100_port_representation"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/110_port_test"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/200_context_menu"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/400_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/420_workflow_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/430_flow_menu"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/500_arrow_line"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/600_image_resize"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/610_round_corner"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/620_round_corner2"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/625_vector_node"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/630_timer"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/640_compartment"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/650_owndraw"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/660_figure_hover"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/670_link"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/680_tooltip"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/800_circuit"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/810_guipainter"/>
+	<classpathentry excluding="model/|view/|command/" kind="src" path="draw2d/compressed/demo/820_mvc"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/820_mvc/command"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/820_mvc/model"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/820_mvc/view"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/lib"/>
+	<classpathentry excluding="palette/|command/|property/|menu/|xml/|toolbar/|view/|dialog/|util/|model/" kind="src" path="draw2d/compressed/demo/830_network_editor/src"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/command"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/dialog"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/menu"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/model"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/palette"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/property"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/toolbar"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/util"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/view"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/830_network_editor/src/xml"/>
+	<classpathentry excluding="adapter/prototype/|adapter/yui/|adapter/ext/|adapter/jquery/" kind="src" path="draw2d/compressed/demo/840_extjs_integration"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/840_extjs_integration/adapter/ext"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/840_extjs_integration/adapter/jquery"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/840_extjs_integration/adapter/prototype"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/840_extjs_integration/adapter/yui"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/900_command_listener"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/910_serializer"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/930_selection_listener2"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/940_snap_to_geometry"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/950_snap_to_grid"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/960_scroll_to"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/970_viewport"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/980_toggle_button"/>
+	<classpathentry kind="src" path="draw2d/compressed/demo/990_resize"/>
+	<classpathentry excluding="uml/" kind="src" path="draw2d/compressed/shape"/>
+	<classpathentry kind="src" path="draw2d/compressed/shape/uml"/>
+	<classpathentry excluding="demo/110_port_test/|demo/625_vector_node/|demo/940_snap_to_geometry/|demo/930_selection_listener2/|demo/680_tooltip/|demo/980_toggle_button/|demo/900_command_listener/|demo/810_guipainter/|demo/640_compartment/|demo/950_snap_to_grid/|demo/080_connector_via_api1/|demo/025_vector_draw/|demo/820_mvc/|demo/030_connector_direct/|demo/840_extjs_integration/adapter/ext/|demo/820_mvc/view/|demo/830_network_editor/src/model/|demo/630_timer/|demo/060_connector_router/|demo/430_flow_menu/|demo/910_serializer/|demo/820_mvc/command/|shape/|demo/830_network_editor/src/property/|demo/960_scroll_to/|demo/830_network_editor/src/toolbar/|demo/200_context_menu/|demo/840_extjs_integration/adapter/prototype/|demo/830_network_editor/lib/|demo/620_round_corner2/|demo/400_doubleclick/|demo/830_network_editor/src/palette/|demo/500_arrow_line/|demo/800_circuit/|demo/070_connector_vector/|demo/830_network_editor/src/|demo/830_network_editor/src/menu/|demo/670_link/|demo/990_resize/|demo/610_round_corner/|demo/820_mvc/model/|demo/055_connector_contextmenu/|shape/uml/|demo/600_image_resize/|demo/056_connector_doubleclick/|demo/840_extjs_integration/|demo/970_viewport/|demo/050_connector_decorator/|demo/830_network_editor/src/command/|demo/830_network_editor/src/util/|demo/840_extjs_integration/adapter/jquery/|demo/660_figure_hover/|demo/830_network_editor/src/xml/|demo/840_extjs_integration/adapter/yui/|demo/|demo/830_network_editor/src/view/|demo/420_workflow_contextmenu/|demo/090_connector_via_api2/|demo/830_network_editor/src/dialog/|demo/035_connector_z/|demo/100_port_representation/|demo/040_connector_label/|demo/650_owndraw/" kind="src" path="draw2d/normal"/>
+	<classpathentry excluding="110_port_test/|625_vector_node/|940_snap_to_geometry/|930_selection_listener2/|680_tooltip/|980_toggle_button/|900_command_listener/|810_guipainter/|640_compartment/|950_snap_to_grid/|080_connector_via_api1/|025_vector_draw/|820_mvc/|030_connector_direct/|840_extjs_integration/adapter/ext/|820_mvc/view/|830_network_editor/src/model/|630_timer/|060_connector_router/|430_flow_menu/|910_serializer/|820_mvc/command/|830_network_editor/src/property/|960_scroll_to/|830_network_editor/src/toolbar/|200_context_menu/|840_extjs_integration/adapter/prototype/|830_network_editor/lib/|620_round_corner2/|400_doubleclick/|830_network_editor/src/palette/|500_arrow_line/|800_circuit/|070_connector_vector/|830_network_editor/src/|830_network_editor/src/menu/|670_link/|990_resize/|610_round_corner/|820_mvc/model/|055_connector_contextmenu/|600_image_resize/|056_connector_doubleclick/|840_extjs_integration/|970_viewport/|050_connector_decorator/|830_network_editor/src/command/|830_network_editor/src/util/|840_extjs_integration/adapter/jquery/|660_figure_hover/|830_network_editor/src/xml/|840_extjs_integration/adapter/yui/|830_network_editor/src/view/|420_workflow_contextmenu/|090_connector_via_api2/|830_network_editor/src/dialog/|035_connector_z/|100_port_representation/|040_connector_label/|650_owndraw/" kind="src" path="draw2d/normal/demo"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/025_vector_draw"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/030_connector_direct"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/035_connector_z"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/040_connector_label"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/050_connector_decorator"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/055_connector_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/056_connector_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/060_connector_router"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/070_connector_vector"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/080_connector_via_api1"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/090_connector_via_api2"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/100_port_representation"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/110_port_test"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/200_context_menu"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/400_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/420_workflow_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/430_flow_menu"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/500_arrow_line"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/600_image_resize"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/610_round_corner"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/620_round_corner2"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/625_vector_node"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/630_timer"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/640_compartment"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/650_owndraw"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/660_figure_hover"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/670_link"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/680_tooltip"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/800_circuit"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/810_guipainter"/>
+	<classpathentry excluding="view/|command/|model/" kind="src" path="draw2d/normal/demo/820_mvc"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/820_mvc/command"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/820_mvc/model"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/820_mvc/view"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/lib"/>
+	<classpathentry excluding="model/|property/|toolbar/|palette/|menu/|command/|util/|xml/|view/|dialog/" kind="src" path="draw2d/normal/demo/830_network_editor/src"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/command"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/dialog"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/menu"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/model"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/palette"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/property"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/toolbar"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/util"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/view"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/830_network_editor/src/xml"/>
+	<classpathentry excluding="adapter/ext/|adapter/prototype/|adapter/jquery/|adapter/yui/" kind="src" path="draw2d/normal/demo/840_extjs_integration"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/840_extjs_integration/adapter/ext"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/840_extjs_integration/adapter/jquery"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/840_extjs_integration/adapter/prototype"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/840_extjs_integration/adapter/yui"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/900_command_listener"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/910_serializer"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/930_selection_listener2"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/940_snap_to_geometry"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/950_snap_to_grid"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/960_scroll_to"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/970_viewport"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/980_toggle_button"/>
+	<classpathentry kind="src" path="draw2d/normal/demo/990_resize"/>
+	<classpathentry excluding="uml/" kind="src" path="draw2d/normal/shape"/>
+	<classpathentry kind="src" path="draw2d/normal/shape/uml"/>
+	<classpathentry excluding="demo/840_extjs_integration/adapter/prototype/|demo/960_scroll_to/|demo/070_connector_vector/|demo/840_extjs_integration/adapter/yui/|demo/830_network_editor/src/model/|demo/030_connector_direct/|demo/640_compartment/|demo/630_timer/|demo/110_port_test/|demo/830_network_editor/src/palette/|demo/840_extjs_integration/|demo/830_network_editor/src/command/|demo/830_network_editor/lib/|demo/830_network_editor/src/menu/|demo/840_extjs_integration/adapter/jquery/|demo/970_viewport/|demo/820_mvc/command/|demo/060_connector_router/|demo/820_mvc/model/|demo/800_circuit/|demo/100_port_representation/|demo/990_resize/|demo/820_mvc/view/|demo/090_connector_via_api2/|demo/400_doubleclick/|demo/025_vector_draw/|demo/680_tooltip/|demo/200_context_menu/|demo/900_command_listener/|demo/420_workflow_contextmenu/|demo/610_round_corner/|demo/980_toggle_button/|demo/830_network_editor/src/dialog/|demo/056_connector_doubleclick/|shape/uml/|demo/|demo/670_link/|demo/625_vector_node/|demo/940_snap_to_geometry/|demo/930_selection_listener2/|demo/830_network_editor/src/toolbar/|demo/050_connector_decorator/|demo/810_guipainter/|demo/830_network_editor/src/xml/|demo/620_round_corner2/|demo/040_connector_label/|demo/080_connector_via_api1/|demo/430_flow_menu/|demo/950_snap_to_grid/|demo/830_network_editor/src/view/|demo/500_arrow_line/|demo/600_image_resize/|demo/830_network_editor/src/|demo/830_network_editor/src/util/|demo/840_extjs_integration/adapter/ext/|shape/|demo/820_mvc/|demo/660_figure_hover/|demo/910_serializer/|demo/830_network_editor/src/property/|demo/055_connector_contextmenu/|demo/650_owndraw/|demo/035_connector_z/" kind="src" path="draw2d/single"/>
+	<classpathentry excluding="840_extjs_integration/adapter/prototype/|960_scroll_to/|070_connector_vector/|840_extjs_integration/adapter/yui/|830_network_editor/src/model/|030_connector_direct/|640_compartment/|630_timer/|110_port_test/|830_network_editor/src/palette/|840_extjs_integration/|830_network_editor/src/command/|830_network_editor/lib/|830_network_editor/src/menu/|840_extjs_integration/adapter/jquery/|970_viewport/|820_mvc/command/|060_connector_router/|820_mvc/model/|800_circuit/|100_port_representation/|990_resize/|820_mvc/view/|090_connector_via_api2/|400_doubleclick/|025_vector_draw/|680_tooltip/|200_context_menu/|900_command_listener/|420_workflow_contextmenu/|610_round_corner/|980_toggle_button/|830_network_editor/src/dialog/|056_connector_doubleclick/|670_link/|625_vector_node/|940_snap_to_geometry/|930_selection_listener2/|830_network_editor/src/toolbar/|050_connector_decorator/|810_guipainter/|830_network_editor/src/xml/|620_round_corner2/|040_connector_label/|080_connector_via_api1/|430_flow_menu/|950_snap_to_grid/|830_network_editor/src/view/|500_arrow_line/|600_image_resize/|830_network_editor/src/|830_network_editor/src/util/|840_extjs_integration/adapter/ext/|820_mvc/|660_figure_hover/|910_serializer/|830_network_editor/src/property/|055_connector_contextmenu/|650_owndraw/|035_connector_z/" kind="src" path="draw2d/single/demo"/>
+	<classpathentry kind="src" path="draw2d/single/demo/025_vector_draw"/>
+	<classpathentry kind="src" path="draw2d/single/demo/030_connector_direct"/>
+	<classpathentry kind="src" path="draw2d/single/demo/035_connector_z"/>
+	<classpathentry kind="src" path="draw2d/single/demo/040_connector_label"/>
+	<classpathentry kind="src" path="draw2d/single/demo/050_connector_decorator"/>
+	<classpathentry kind="src" path="draw2d/single/demo/055_connector_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/single/demo/056_connector_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/single/demo/060_connector_router"/>
+	<classpathentry kind="src" path="draw2d/single/demo/070_connector_vector"/>
+	<classpathentry kind="src" path="draw2d/single/demo/080_connector_via_api1"/>
+	<classpathentry kind="src" path="draw2d/single/demo/090_connector_via_api2"/>
+	<classpathentry kind="src" path="draw2d/single/demo/100_port_representation"/>
+	<classpathentry kind="src" path="draw2d/single/demo/110_port_test"/>
+	<classpathentry kind="src" path="draw2d/single/demo/200_context_menu"/>
+	<classpathentry kind="src" path="draw2d/single/demo/400_doubleclick"/>
+	<classpathentry kind="src" path="draw2d/single/demo/420_workflow_contextmenu"/>
+	<classpathentry kind="src" path="draw2d/single/demo/430_flow_menu"/>
+	<classpathentry kind="src" path="draw2d/single/demo/500_arrow_line"/>
+	<classpathentry kind="src" path="draw2d/single/demo/600_image_resize"/>
+	<classpathentry kind="src" path="draw2d/single/demo/610_round_corner"/>
+	<classpathentry kind="src" path="draw2d/single/demo/620_round_corner2"/>
+	<classpathentry kind="src" path="draw2d/single/demo/625_vector_node"/>
+	<classpathentry kind="src" path="draw2d/single/demo/630_timer"/>
+	<classpathentry kind="src" path="draw2d/single/demo/640_compartment"/>
+	<classpathentry kind="src" path="draw2d/single/demo/650_owndraw"/>
+	<classpathentry kind="src" path="draw2d/single/demo/660_figure_hover"/>
+	<classpathentry kind="src" path="draw2d/single/demo/670_link"/>
+	<classpathentry kind="src" path="draw2d/single/demo/680_tooltip"/>
+	<classpathentry kind="src" path="draw2d/single/demo/800_circuit"/>
+	<classpathentry kind="src" path="draw2d/single/demo/810_guipainter"/>
+	<classpathentry excluding="command/|model/|view/" kind="src" path="draw2d/single/demo/820_mvc"/>
+	<classpathentry kind="src" path="draw2d/single/demo/820_mvc/command"/>
+	<classpathentry kind="src" path="draw2d/single/demo/820_mvc/model"/>
+	<classpathentry kind="src" path="draw2d/single/demo/820_mvc/view"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/lib"/>
+	<classpathentry excluding="model/|palette/|command/|menu/|dialog/|toolbar/|xml/|view/|util/|property/" kind="src" path="draw2d/single/demo/830_network_editor/src"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/command"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/dialog"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/menu"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/model"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/palette"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/property"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/toolbar"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/util"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/view"/>
+	<classpathentry kind="src" path="draw2d/single/demo/830_network_editor/src/xml"/>
+	<classpathentry excluding="adapter/prototype/|adapter/yui/|adapter/jquery/|adapter/ext/" kind="src" path="draw2d/single/demo/840_extjs_integration"/>
+	<classpathentry kind="src" path="draw2d/single/demo/840_extjs_integration/adapter/ext"/>
+	<classpathentry kind="src" path="draw2d/single/demo/840_extjs_integration/adapter/jquery"/>
+	<classpathentry kind="src" path="draw2d/single/demo/840_extjs_integration/adapter/prototype"/>
+	<classpathentry kind="src" path="draw2d/single/demo/840_extjs_integration/adapter/yui"/>
+	<classpathentry kind="src" path="draw2d/single/demo/900_command_listener"/>
+	<classpathentry kind="src" path="draw2d/single/demo/910_serializer"/>
+	<classpathentry kind="src" path="draw2d/single/demo/930_selection_listener2"/>
+	<classpathentry kind="src" path="draw2d/single/demo/940_snap_to_geometry"/>
+	<classpathentry kind="src" path="draw2d/single/demo/950_snap_to_grid"/>
+	<classpathentry kind="src" path="draw2d/single/demo/960_scroll_to"/>
+	<classpathentry kind="src" path="draw2d/single/demo/970_viewport"/>
+	<classpathentry kind="src" path="draw2d/single/demo/980_toggle_button"/>
+	<classpathentry kind="src" path="draw2d/single/demo/990_resize"/>
+	<classpathentry excluding="uml/" kind="src" path="draw2d/single/shape"/>
+	<classpathentry kind="src" path="draw2d/single/shape/uml"/>
+	<classpathentry excluding="ui/i18n/|ui/|external/|ui/minified/" kind="src" path="jquery/development-bundle"/>
+	<classpathentry kind="src" path="jquery/development-bundle/external"/>
+	<classpathentry excluding="i18n/|minified/" kind="src" path="jquery/development-bundle/ui"/>
+	<classpathentry kind="src" path="jquery/development-bundle/ui/i18n"/>
+	<classpathentry kind="src" path="jquery/development-bundle/ui/minified"/>
+	<classpathentry kind="src" path="jquery/js"/>
+	<classpathentry kind="src" path="prototipo/javascript"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
