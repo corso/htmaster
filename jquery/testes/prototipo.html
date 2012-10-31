@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>HTMaster - Protótipo</title>
+	<link rel="stylesheet" href="../development-bundle/themes/base/jquery.ui.all.css">
+	<script src="../development-bundle/jquery-1.6.2.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.mouse.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.draggable.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.resizable.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.accordion.js"></script>
+	<link rel="stylesheet" href="../development-bundle/demos/demos.css">
+	<style>				
+		.ui-resizable-helper { border: 1px dotted gray; }		
+		.meta {
+			width: 100px; height: 50px; padding: 0.5em; position: relative;
+			background-color: #FFFFFF;
+			border: 2px solid #AAAAAA;
+			color: #222222;
+			border-radius: 10px 10px 10px 10px;
+		}
+		.tarefa {
+			width: 100px; height: 60px; padding: 0.5em; position: relative;
+			background-color: #FFFFFF;
+			border: 2px solid #AAAAAA;
+			color: #222222;
+		}
+		.tarefaOpcional {
+			width: 100px; height: 60px; padding: 0.5em; position: relative;
+			background-color: #FFFFFF;
+			border: 2px dashed #AAAAAA;
+			color: #222222;
+		}
+		.descricao {
+			width: 300px; height: 120px; padding: 0.5em; position: relative;
+			background-color: #FFFFFF;
+			border: 0px;
+			color: #222222;
+		}
+		.label {border: 0; overflow: hidden; resize:none; width: 90px; height: 30px; font-size: 11px;} 
+		.label2 {border: 0; overflow: hidden; resize:none; width: 250px; height: 100px; font-size: 11px;} 		
+		
+		.cabecalho { 
+			background-color: #F7AC4A;
+			width: 994px; 
+			height: 50px; 
+			border: 1px solid #FFF; 
+			margin: -5px 0 0 -3px; 
+		}
+		.cabecalho .actions {
+			margin-top: 4px;
+			height: 50px;
+		}
+		.cabecalho .actions div span a:hover {
+			-moz-transform: rotate(-12deg);
+		}
+		.cabecalho .actions .section1 {
+			padding-left: 30px;
+			width: 80px;
+			height: 50px;
+		}
+		.cabecalho .actions .section1 span a img {
+			width: 20px;
+			height: 20px;
+		}		
+		.cabecalho .actions .section2 {
+			position: absolute;
+			margin: -50px 0 0 130px;
+			width: 80px;
+			height: 50px;
+		}
+		.cabecalho .actions .section2 span a img{
+			width: 20px;
+			height: 20px;
+		}
+		.cabecalho .actions .section4 {
+			position: absolute;
+			margin: -50px 0 0 330px;
+			width: 150px;
+			height: 50px;
+		}
+		.cabecalho .actions .section4 span a img{
+			padding-top: 4px;
+			width: 14px;
+			height: 14px;
+		}
+		.cabecalho .actions .section3 {
+			position: absolute;
+			margin: -50px 0 0 230px;
+			width: 80px;
+			height: 50px;
+		}
+		.cabecalho .actions .section3 span a img{
+			width: 20px;
+			height: 20px;
+		}
+		.cabecalho .actions .section5 {
+			position: absolute;
+			margin: -50px 0 0 510px;
+			width: 80px;
+			height: 50px;
+		}
+		.cabecalho .actions .section5 span a img{
+			width: 20px;
+			height: 20px;
+		}		
+		.cabecalho .actions .section6 {
+			position: absolute;
+			margin: -50px 0 0 610px;
+			width: 80px;
+			height: 50px;
+		}
+		.cabecalho .actions .section6 span a img{
+			width: 20px;
+			height: 20px;
+		}
+		.cabecalho .actions .section7 {
+			position: absolute;
+			margin: -50px 0 0 710px;
+			width: 40px;
+			height: 50px;
+		}
+		.cabecalho .actions .section7 span a img{
+			width: 20px;
+			height: 20px;
+		}		
+				
+		.menuleft { 
+			background-color: #5C6BE0;
+			width: 148px; 
+			height: 450px; 
+			border: 1px solid #FFF; 
+			padding: 10px; 
+			margin: 0 0 0 -3px; 
+		}
+		.menuleft .section {
+			text-align: center;				
+		}
+		.menuleft .section a:hover img {
+			box-shadow: 0 0 14px #5C6BE0;
+   			opacity: 1;
+		}
+		.menuleft h3 { font-size: 12px; font-weight: bold; }
+		.desktop { 
+			background-image:url("images/grid.png");	
+			position: absolute; 
+			width: 802px; 
+			height: 450px; 
+			border: 1px solid #FFF; 
+			padding: 10px; 
+			margin: -473px 0 0 169px; 
+		}
+		.rodape { 
+			background-color: #F7AC4A;
+			width: 148px; 
+			height: 80px; 
+			border: 1px solid #FFF; 
+			padding: 10px; 
+			margin: 0 0 0 -3px; 			
+		}
+		.rodape .logo { 
+			font-size: 23px;
+			padding-left: 35px;	
+			color: #FFF;
+			font-family: sans-serif;
+			text-shadow: -2px 2px 2px #5C6BE0;
+		}
+		.console { 
+			background-color: #F94848; 
+			position: absolute; 
+			width: 804px; 
+			height: 80px; 
+			border: 1px solid #FFF; 
+			padding: 10px; 
+			margin: -102px 0 0 167px; 			
+		}
+		.console .errors { font-size: 11px; padding: 5px 0 0 15px; }
+		.console .errors a { color: #FFF; text-decoration: none; padding-left: 4px;}
+		.console .errors a:hover { color: #FFF; text-decoration: underline; }
+	</style>
+	<script>
+	$(function() {
+		$( ".meta" ).draggable( {cursorAt: {cursor:"move", bottom:25, left:50}, snap:true, containment: ".desktop"});		
+		$( ".meta" ).resizable( {animate: true} );
+	
+		$( ".tarefa" ).draggable( {cursorAt: {cursor:"move", bottom:30, left:50}, snap:true, containment: ".desktop"});		
+		$( ".tarefa" ).resizable( {animate: true} );
+		
+		$( ".tarefaOpcional" ).draggable( {cursorAt: {cursor:"move", bottom:30, left:50}, snap:true, containment: ".desktop"});		
+		$( ".tarefaOpcional" ).resizable( {animate: true} );
+		
+		$( ".descricao" ).draggable( {cursorAt: {cursor:"move", bottom:60, left:175}, snap:true, containment: ".desktop"});		
+		$( ".descricao" ).resizable( {animate: true} );
+
+		$( ".accordion" ).accordion( {autoHeight: false,collapsible: true} );
+	});
+	</script>
+</head>
+<body>
+<div style=" margin: 0 auto; width: 994px;">
+	<div class="cabecalho">
+		<div class="actions">
+			<div class="section1">
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Novo"><img src="images/new.png" alt="Novo"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">	
+					<a href="#" title="Abrir"><img src="images/open.png" alt="Abrir"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Salvar"><img src="images/save.png" alt="Salvar"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Imprimir"><img src="images/print.png" alt="Imprimir"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Visualizar impressão"><img src="images/print_preview.png" alt="Visualizar Impressão"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Exportar para imagem"><img src="images/export_image.png" alt="Exportar para imagem"/></a>
+				</span>
+			</div>
+			
+			<div class="section2">
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Recortar"><img src="images/cut.png" alt="Recortar"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">	
+					<a href="#" title="Copiar"><img src="images/copy.png" alt="Copiar"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Colar"><img src="images/paste.png" alt="Colar"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Excluir"><img src="images/delete.png" alt="Excluir"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Desfazer"><img src="images/undo.png" alt="Desfazer"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Refazer"><img src="images/redo.png" alt="Refazer"/></a>
+				</span>
+			</div>
+			
+			<div class="section3">
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Visualizar"><img src="images/preview.png" alt="Visualizar"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">	
+					<a href="#" title="Limpar"><img src="images/clear.png" alt="Limpar"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Fechar"><img src="images/close.png" alt="Fechar"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Validar"><img src="images/validate.png" alt="Validar"/></a>
+				</span>
+			</div>
+			
+			<div class="section4">
+				<span style="padding: 5px 2px 0 0;">
+					<select id="fonte" title="Selecione uma fonte">
+						<option>Selecione uma fonte...</option>
+						<option>Arial</option>
+						<option>Courier</option>
+						<option>Times New Roman</option>
+						<option>Verdana</option>
+					</select>					
+				</span>	
+				<span style="padding: 5px 2px 0 0;">
+					<select id="fonte" title="Selecione o tamanho da fonte">
+						<option>10 pt</option>						
+						<option>12 pt</option>
+						<option>14 pt</option>
+						<option>16 pt</option>
+						<option>20 pt</option>
+					</select>					
+				</span>	
+				<span style="padding: 5px 2px 0 10px;">
+					<a href="#" title="Negrito"><img src="images/font_bold.png" alt="Negrito"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Itálico"><img src="images/font_italic.png" alt="Itálico"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Sublinhado"><img src="images/font_underline.png" alt="Sublinhado"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Alinhamento"><img src="images/font_align.png" alt="Alinhamento"/></a>
+				</span>
+			</div>
+			
+			<div class="section5">
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Cor da fonte"><img src="images/color_font.png" alt="Cor da fonte"/></a>
+				</span>
+				<span style="padding: 5px 2px 0 0;">	
+					<a href="#" title="Cor de preenchimento"><img src="images/color_fill.png" alt="Cor de preenchimento"/></a>
+				</span>		
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Cor da linha"><img src="images/color_line.png" alt="Cor da linha"/></a>
+				</span>
+			</div>
+									
+			<div class="section6">				
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Layout com grade"><img src="images/bg_grid.png" alt="Layout com grade"/></a>	
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Layout com pontos"><img src="images/bg_dot.png" alt="Layout com pontos"/></a>	
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Layout em branco"><img src="images/bg_white.png" alt="Layout em branco"/></a>	
+				</span>
+				<span style="padding: 5px 2px 0 0;"> 
+					<a href="#" title="Aumentar (zoom in)"><img src="images/zoom_in.png" alt="Aumentar (zoom in)"/></a>	
+				</span>
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Diminuir (zoom out)"><img src="images/zoom_out.png" alt="Diminuir (zoom out)"/></a>
+				</span>
+			</div>
+			
+			<div class="section7">
+				<span style="padding: 5px 2px 0 0;">
+					<a href="#" title="Ajuda"><img src="images/help.png" alt="Ajuda"/></a>
+				</span>
+			</div>	
+		</div>			
+	</div>
+	
+	<div class="menuleft">
+		<div class="accordion">
+			<h3><a href="#">Componentes</a></h3>
+			<div class="section">
+				<a href="#" title="Meta">
+					<img src="componentes/meta.gif" alt="Meta" width="46"/>
+				</a>
+				<a href="#" title="Tarefa">
+					<img src="componentes/tarefa.gif" alt="Tarefa" width="46"/>
+				</a>
+				<a href="#" title="Opcional">
+					<img src="componentes/opcional.gif" alt="Opcional" width="46"/>
+				</a>
+				<a href="#" title="Operador">
+					<img src="componentes/operador.gif" alt="Operador" width="46"/>
+				</a>	
+				<a href="#" title="Re-uso">
+					<img src="componentes/reuso.gif" alt="Re-uso" width="46"/>
+				</a>		
+			</div>
+			
+			<h3><a href="#">Estereótipos</a></h3>
+			<div class="section">
+				<a href="#" title="Sequencial">
+					<img src="componentes/est_sequencial.gif" alt="Sequencial" style="padding: 2px;"/>
+				</a>
+				<a href="#" title="Independente da ordem">
+					<img src="componentes/est_semordem.gif" alt="Independente da ordem" style="padding: 2px;"/>
+				</a>
+				<a href="#" title="Alternativa">
+					<img src="componentes/est_alternativa.gif" alt="Alternativa" style="padding: 2px;"/>
+				</a><br/>
+				<a href="#" title="Iterativa">
+					<img src="componentes/est_iterativa.gif" alt="Iterativa" style="padding: 2px;"/>
+				</a>
+				<a href="#" title="Ubíqua">
+					<img src="componentes/est_ubiqua.gif" alt="Ubíqua" style="padding: 2px;"/>
+				</a>
+			</div>
+			
+			<h3><a href="#">Ligações</a></h3>
+			<div class="section">
+				<a href="#" title="Simples">
+					<img src="componentes/lig_simples.gif" alt="Simples" width="46"/>
+				</a>
+				<a href="#" title="Pré-condição">
+					<img src="componentes/lig_precondicao.gif" alt="Pré-condição" width="46"/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="desktop">
+		<div class="meta">
+				
+		</div>
+	
+		<div class="tarefa">
+		
+		</div>
+
+		<div class="tarefa">
+			<textarea class="label">Texto editável...</textarea>	
+		</div>
+		
+		<div class="tarefa">
+				
+		</div>
+				
+		<div class="tarefaOpcional">
+				
+		</div>
+		
+		<div class="descricao">
+			<textarea class="label2">Texto editável...</textarea>	
+		</div>
+	</div>	
+	
+	<div class="rodape">
+		<div class="logo">
+			<b>H</b><br/>
+			<b>T</b><br/>
+			<b>M</b>aster
+		</div>
+	</div>
+	
+	<div class="console">		
+		<div class="errors">
+			<img src="images/error.png"/><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/></a>
+			<img src="images/error.png"/><a href="#">Suspendisse et urna eros, quis condimentum turpis.<br/></a>
+			<img src="images/alert.png"/><a href="#">Proin adipiscing scelerisque enim, non dapibus nunc egestas sit amet.<br/></a>
+			<img src="images/alert.png"/><a href="#">Vivamus posuere justo ac ligula vestibulum at elementum tellus mattis.<br/></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

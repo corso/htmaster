@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>TC Testes - Arrastar Tarefa</title>
+	<link rel="stylesheet" href="../development-bundle/themes/base/jquery.ui.all.css">
+	<script src="../development-bundle/jquery-1.6.2.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.mouse.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.draggable.js"></script>
+	<script src="../development-bundle/ui/jquery.ui.resizable.js"></script>
+	<link rel="stylesheet" href="../development-bundle/demos/demos.css">
+	<style>
+		.linkTeste {font-size: 14px; font-weight: bold; margin-right: 15px;}
+		.containment-wrapper { width:600px; height:450px; border:2px solid #ccc; padding: 10px; }
+		.ui-resizable-helper { border: 1px dotted gray; }
+		.label {border: 0; overflow: hidden; resize:none; width: 90px; height: 60px; font-size: 11px;} 		
+		.draggable {
+			width: 100px; height: 100px; padding: 0.5em; position: relative;
+			background-color: #FFFFFF;
+		    border: 1px solid #AAAAAA;
+		    color: #222222;
+		}
+		.line {
+			width: 200px; height: 0px; position: relative;
+			background-color: #FFFFFF;
+		    border: 1px solid #AAAAAA;
+		    color: #222222;
+		}
+	</style>
+	<script>
+	$(function() {
+		$( ".draggable" ).draggable( {cursorAt: {cursor:"move", bottom:50, left:50}, snap:true, containment: ".containment-wrapper"});		
+		$( ".draggable" ).resizable( {animate: true} );
+
+		$( ".line" ).draggable( {snap:true, containment: ".containment-wrapper"});
+		$( ".line" ).resizable( {animate: true} );
+	});
+
+	bla = ""
+	var lineLength = Math.sqrt( (Ax-Bx)*(Ax-Bx)+(Ay-By)*(Ay-By) );
+	for( var i=0; i<lineLength; i++ )
+	{
+	    bla += "<div style='position:absolute;left:" + Math.round( Ax+(Bx-Ax)*i/lineLength  ) + "px;top:"+ Math.round( Ay+(By-Ay)*i/lineLength  ) + "px;width:1px;height:1px;background:#000'></div>";
+	}
+	document.body.innerHTML += bla
+	</script>
+</head>
+<body>
+<div style="position: fixed; margin: 10px 0 20px 0;">
+	<span class="linkTeste">TC Links:</span>
+	<a href="http://gustavo.dev.dype.com.br/tc/jquery" class="linkTeste">Home</a>
+	<a href="http://gustavo.dev.dype.com.br/tc/jquery/development-bundle/demos/" class="linkTeste">Demos</a>
+	<a href="http://gustavo.dev.dype.com.br/tc/jquery/testes" class="linkTeste">Testes</a>	
+
+	<div class="demo">
+		<div class="containment-wrapper">
+			<div class="draggable">
+				<p>Eu posso ser arrastado.</p>
+			</div>
+	
+			<div class="draggable">
+				<textarea class="label">Eu também e meu texto pode ser editado.</textarea>	
+			</div>
+			
+			<div class="draggable">
+					
+			</div>
+		</div>	
+	</div><!-- End demo -->	
+</div>
+
+</body>
+</html>
